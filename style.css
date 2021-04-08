@@ -3,41 +3,61 @@ body {
   padding: 0;
   color: #222;
   background-color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-#nav {
+.nav {
   margin-top: 15px;
+  padding: 6px 6px;
+  display: flex;
+  /* height: 48px; */
+  /* width: 100vw; */
+  align-content: center;
+  /* background-color: teal; */
 }
 
-#nav a {
+.nav a {
   text-decoration: none;
   font-size: 14px;
   font-family: Arial, sans-serif;
-  padding: 5px 5px; /*padding of 5 pixels for all link sides*/
-  margin: 0 5px;
+  padding: 6px 6px; /*padding of 5 pixels for all link sides*/
+  margin-left: 15px;
+  margin-right: 5px;
 }
 
-#nav a:hover {
+.nav a:hover {
   text-decoration: underline; /*underline when a nav link is hovered*/
 }
 
-#nav a:visited {
+.nav a:visited {
   color: #222; /*remove color of highlighted links*/
 }
 
-#leftnav {
+/* #leftnav {
   margin-left: 15px;
-  float: left; /*position container items to the left*/
+  float: left; 
   display: flex;
   align-content: center;
+  background-color: thistle;
+  width: 8vw;
+  height: 60px;
+} */
+
+#gmail {
+  margin-right: 0;
 }
 
-#rightnav {
-  display: flex;
-  /* flex-direction: row; */
+.nav .push-right {
+  margin-left: auto; /*pushes this element to the right of the flex-box*/
+}
+
+.nav .right-nav {
+  /* display: flex;
+  flex-grow: 1;
   justify-content: flex-end;
   margin-right: 15px;
-  align-content: center;
+  background-color: teal; */
   /* text-justify: auto; */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -46,6 +66,11 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nav .right-link {
+  padding-left: 15px;
+  margin: 0;
 }
 
 .material-icons {
@@ -63,6 +88,14 @@ body {
   /* border-color: cornflowerblue;
   background-color: cornflowerblue; */
   /* font-size: 32px; */
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.nav .icon {
 }
 
 #search-content {
@@ -80,4 +113,48 @@ body {
 
 #search-bar-buttons {
   margin: 20px 20px;
+}
+
+#search-bar {
+  /* height: 44px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 582px;
+  border-radius: 20px;
+  border: 2px solid #d3d3d3;
+}
+
+#search-bar:focus {
+  outline: none;
+}
+
+#search-bar:hover {
+  box-shadow: 0px 0.8px 3px 1px #d3d3d3;
+}
+
+#buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 0px 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #3c4043;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  /* border: 1.5px solid #d3d3d3; */
+  box-shadow: 0px 0.8px 1px 1px #d3d3d3;
+}
+
+#language p {
+  font-size: 12px;
 }

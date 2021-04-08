@@ -12,28 +12,32 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <nav id="nav"> <!--Google home page upper nav bar-->
-            <div id="leftnav"> <!--Container for the LHS of the nav bar-->
-                <a href="" id="about">About</a> <!--About Link-->
-                <a href="" id="store">Store</a> <!--Store Link-->
-            </div> 
-            <div id="rightnav"> <!--Container for the RHS of the nav bar-->
-                <a href="" id="gmail">Gmail</a> <!--Gmail Link-->
-                <a href="" id="images">Images</a> <!-- Images Link-->
+        <nav class="nav"> <!--Google home page upper nav bar-->
+                <a href="" >About</a> <!--About Link-->
+                <a href="" >Store</a> <!--Store Link-->
+            
+                <a href="" class="push-right right-nav" id="gmail">Gmail</a> <!--Gmail Link-->
+                <a href="" class="right-nav right-link">Images</a> <!-- Images Link-->
                 <!-- <img class="icon" src="googleappsicon.png" alt=""> Google Apps Icon -->
-                <span id="apps" class="material-icons">apps</span>
+                <a href=""><span id="apps" class="material-icons icon">apps</span></a>
                 <!-- <div id="usericon" class="icon" alt=""></div> User Icon -->
-                <span id="usericon" class="material-icons">account_circle</span>
-            </div> 
+                <!-- <span id="usericon" class="material-icons">account_circle</span>  -->
+                <a href="" class="icon"><img id="usericon" src="images/usericon.jpg"></a>
+               
+            </nav>
             <div id="search-content"> <!--Container for the logo, search bar, search button, lucky button and the language change text-->
                 <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></img>
                 <div id="search-bar-buttons">    
-                    <div id="search-bar">
-                <input type="text"></input>
+                    
+                <input id="search-bar" type="text"></input>
+                    <div id="buttons">
+                        <button class="button">Google Search</button>
+                        <button class="button">I'm Feeling Lucky</button>
                     </div>
                 </div>
+                <div id="language"><p>Google offered in: <a href="">Français</a></p></div>
             </div> 
-        </nav>
+        
         
         
         <script src="" async defer></script>
