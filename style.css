@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: white;
+}
+
+#nav {
+  margin-top: 15px;
+}
+
+#nav a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  padding: 5px 5px; /*padding of 5 pixels for all link sides*/
+  margin: 0 5px;
+}
+
+#nav a:hover {
+  text-decoration: underline; /*underline when a nav link is hovered*/
+}
+
+#nav a:visited {
+  color: #222; /*remove color of highlighted links*/
+}
+
+#leftnav {
+  margin-left: 15px;
+  float: left; /*position container items to the left*/
+  display: flex;
+  align-content: center;
+}
+
+#rightnav {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
+  margin-right: 15px;
+  align-content: center;
+  /* text-justify: auto; */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+.material-icons {
+  /* border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent; 
+  width: 20px;
+  height: 20px; */
+  background-color: transparent;
+  margin: 0 5px;
+}
+
+#usericon {
+  /* border-color: cornflowerblue;
+  background-color: cornflowerblue; */
+  /* font-size: 32px; */
+}
+
+#search-content {
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  align-items: center;
+}
+
+#logo {
+  width: 272px;
+  height: 92px;
+  margin-top: 22vh;
+}
+
+#search-bar-buttons {
+  margin: 20px 20px;
+}
