@@ -1,10 +1,21 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   color: #222;
   background-color: white;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .nav {
@@ -21,7 +32,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-family: Arial, sans-serif;
-  padding: 6px 6px; /*padding of 5 pixels for all link sides*/
+  padding: 6px 6px; /*padding of 6 pixels for all link sides*/
   margin-left: 15px;
   margin-right: 5px;
 }
@@ -115,13 +126,21 @@ body {
   margin: 20px 20px;
 }
 
+#search-bar-container {
+  text-align: center;
+  position: relative;
+}
+
 #search-bar {
   /* height: 44px; */
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 582px;
-  border-radius: 20px;
-  border: 2px solid #d3d3d3;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 502px;
+  border-radius: 23px;
+  border: 1px solid #d3d3d3;
+  font-size: 14px;
 }
 
 #search-bar:focus {
@@ -130,6 +149,28 @@ body {
 
 #search-bar:hover {
   box-shadow: 0px 0.8px 3px 1px #d3d3d3;
+}
+
+#search-icon,
+#mic-icon {
+  position: absolute;
+  height: 100%;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+#search-icon {
+  top: 11px;
+  left: 8px;
+}
+
+#mic-icon {
+  top: 12px;
+  right: 6px;
 }
 
 #buttons {
@@ -155,6 +196,52 @@ body {
   box-shadow: 0px 0.8px 1px 1px #d3d3d3;
 }
 
+.button:focus {
+  border: 1px solid rgba(0, 110, 255, 0.795);
+}
+
 #language p {
   font-size: 12px;
+}
+
+.footer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.footer a:hover {
+  text-decoration: underline; /*underline when a nav link is hovered*/
+}
+
+.footer a:visited {
+  color: #222; /*remove color of highlighted links*/
+}
+
+.footer-language,
+.footer-links {
+  border-bottom: 1px solid #dadce0;
+}
+
+.footer-language,
+.footer-links a {
+  padding: 15px 15px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.footer-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-links a {
+}
+
+.footer-links .push-right {
+  margin-left: auto; /*pushes this element to the right of the flex-box*/
 }

@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
+        <div class="content">
         <nav class="nav"> <!--Google home page upper nav bar-->
                 <a href="" >About</a> <!--About Link-->
                 <a href="" >Store</a> <!--Store Link-->
@@ -24,20 +25,38 @@
                 <!-- <span id="usericon" class="material-icons">account_circle</span>  -->
                 <a href="" class="icon"><img id="usericon" src="images/usericon.jpg"></a>
                
-            </nav>
-            <div id="search-content"> <!--Container for the logo, search bar, search button, lucky button and the language change text-->
-                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></img>
+        </nav>
+        
+        <div id="search-content"> <!--Container for the logo, search bar, search button, lucky button and the language change text-->
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></img>
                 <div id="search-bar-buttons">    
-                    
-                <input id="search-bar" type="text"></input>
+                    <div id="search-bar-container">
+                        <span id="search-icon" class="material-icons">search</span>
+                        <input id="search-bar" type="text">
+                        <span id="mic-icon" class="material-icons">mic</span>
+                    </div>                 
                     <div id="buttons">
                         <button class="button">Google Search</button>
                         <button class="button">I'm Feeling Lucky</button>
+                    
                     </div>
                 </div>
-                <div id="language"><p>Google offered in: <a href="">Français</a></p></div>
-            </div> 
-        
+            <div id="language"><p>Google offered in: <a href="">Français</a></p></div>
+        </div> 
+        </div>
+        <div class="footer">
+            <div class="footer-language">Canada</div>
+            <div class="footer-links">
+                
+                <a href="">Advertising</a>
+                <a href="">Business</a>
+                <a href="">How Search works</a>
+                <a href="" class="push-right">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Settings</a>
+                
+            </div>
+        </div>
         
         
         <script src="" async defer></script>
