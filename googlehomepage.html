@@ -8,43 +8,39 @@
         <meta name="description" content="A Google homepage replica website. Made as a project to learn and apply HTML and CSS.">
         <meta name="author" content="John Naron">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"> <!-- Linking CSS stylesheet-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Added Google fonts for certain icons-->
     </head>
     <body>
         <div class="content">
-        <nav class="nav"> <!--Google home page upper nav bar-->
+        <div class="nav"> <!--Google home page upper nav bar-->
                 <a href="" >About</a> <!--About Link-->
                 <a href="" >Store</a> <!--Store Link-->
             
                 <a href="" class="push-right right-nav" id="gmail">Gmail</a> <!--Gmail Link-->
                 <a href="" class="right-nav right-link">Images</a> <!-- Images Link-->
-                <!-- <img class="icon" src="googleappsicon.png" alt=""> Google Apps Icon -->
-                <a href=""><span id="apps" class="material-icons icon">apps</span></a>
-                <!-- <div id="usericon" class="icon" alt=""></div> User Icon -->
-                <!-- <span id="usericon" class="material-icons">account_circle</span>  -->
-                <a href="" class="icon"><img id="usericon" src="images/usericon.jpg"></a>
-               
-        </nav>
+                <a href=""><span id="apps" class="material-icons icon">apps</span></a> <!-- Apps Icon -->
+                <a href="" class="icon"><img class="usericon" src="images/usericon.jpg"></a> <!-- User Icon-->
+        </div>
         
         <div id="search-content"> <!--Container for the logo, search bar, search button, lucky button and the language change text-->
-            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></img>
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"></img> <!--Google Logo image-->
                 <div id="search-bar-buttons">    
-                    <div id="search-bar-container">
-                        <span id="search-icon" class="material-icons">search</span>
-                        <input id="search-bar" type="text">
-                        <span id="mic-icon" class="material-icons">mic</span>
+                    <div id="search-bar-container"> <!--div container for search bar-->
+                        <span id="search-icon" class="material-icons">search</span> <!--magnifying glass icon for search bar-->
+                        <input id="search-bar" type="text"> <!--search bar input-->
+                        <span id="mic-icon" class="material-icons">mic</span> <!--search input via audio, icon-->
                     </div>                 
-                    <div id="buttons">
-                        <button class="button">Google Search</button>
-                        <button class="button">I'm Feeling Lucky</button>
+                    <div id="buttons"> <!--container for buttons-->
+                        <button class="button">Google Search</button> <!--Google search button-->
+                        <button class="button">I'm Feeling Lucky</button> <!--I'm feeling lucky button-->
                     
                     </div>
                 </div>
             <div id="language"><p>Google offered in: <a href="">Français</a></p></div>
         </div> 
         </div>
-        <div class="footer">
+        <div class="footer"> <!--footer container-->
             <div class="footer-language">Canada</div>
             <div class="footer-links">
                 
