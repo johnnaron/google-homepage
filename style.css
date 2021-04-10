@@ -15,7 +15,7 @@ body {
 }
 
 .content {
-  flex: 1 0 auto; /*sets the flex grow property to 1 and the flex basis property to auto, this allows the content div to take up space unoccupied by the footer*/
+  flex: 1 0 auto; /*sets the flex grow property to 1 and the flex basis property to auto, this allows the content div to take up the space unoccupied by the footer*/
 }
 
 .nav {
